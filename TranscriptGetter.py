@@ -133,9 +133,6 @@ def get_transcript_info(channel_name, api_key):
     return pd.DataFrame(video_details)
 
 
-# get_transcript_info("aj4ty7vn", 'AIzaSyAcEwPGcKSEnCOCCb86knYAQjGIpIqjJGg').to_csv("lorenzo_transcript")
-
-
 
 
 
