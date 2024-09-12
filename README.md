@@ -2,7 +2,7 @@
 A dashboard allowing you to analyze the speech patterns of your favorite YouTubers!
 
 
-## Purpose
+## The Motivation
 
 ### The idea for this dashboard first came to me after viewing Data Time's YouTube video called "I analyzed all words on the Mr Beast Channel" (https://www.youtube.com/watch?v=lXeNZeLSsgY). Essentially, Data Time got access to all the transcripts of Mr Beast's published videos and did a textual analysis of them. I had the idea to broaden the scope of the insights that Data Time gathered from Mr Beast's channel to all YouTube channels with a user friendly interface.
 
@@ -25,7 +25,7 @@ A dashboard allowing you to analyze the speech patterns of your favorite YouTube
 
 ## Running the Dashboard
 
-#### There has recently been issues with the YouTube Transcript API when it is deployed on cloud services. The issue is that when deployed on the cloud, the IP Address that the host server makes requests with get blocked very fast by YouTube. The workaround is to use multiple proxies and to rotate them when one gets banned. To avoid paying for proxies, I decided to make this project only available to run locally until the issue get resolved. 
+#### There has recently been issues with the YouTube Transcript API when it is deployed on cloud services. The issue is that the IP Address that the host server makes requests with get blocked very fast by YouTube. The workaround is to use multiple proxies and to rotate them when one gets banned. However, to avoid paying for proxies, I decided to make this project only available to run locally until the issue get resolved. 
 
-#### To run the dashboard, clone the repository to your local machine and download the required python libraries. Also, get a YouTube API key from Google. Then, you can run "YouTubeSpeechDashboard.py" and open the Dash app, enter your personal API Key and a YouTube channel name and then wait for the results to display. For channels with many large videos, the process can take a very long time.
+#### To run the dashboard, clone the repository to your local machine and download the required python libraries. Also, get a YouTube API key from Google. Then, you can run "YouTubeSpeechDashboard.py" and open the Dash app, enter your personal API Key and a YouTube channel name and then wait for the results to display. For channels with many large videos, the process can take a long time.
 
