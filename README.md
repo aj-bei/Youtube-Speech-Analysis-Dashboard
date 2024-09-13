@@ -32,6 +32,21 @@ A dashboard allowing you to analyze the speech patterns of your favorite YouTube
 
 ##### Looking at the graph for videos on the Vsauce channel, it does appear that when the distribution of words per minute has a smaller standard deviation, the amount of views seems to be higher. Although, a lot of conflicting variables may be causing this. The introduction of YouTube Shorts in 2020 has also increased the range of the distrubition of words per minute (as seen in the graph).
 
+### Sentiment Analysis
+
+#### Having access to so much textual data, conducting a sentiment analysis of the text is an appealing endeavor. To do the sentiment analysis, I had to first concatenate every word and phrase spoken within a video into one big string. With this string I could tokenize it into sentences (using NLTK). Instead of calculating a sentiment score for an entire transcript (which can be >2000 words), I decided I would calculate a sentiment score for each sentence and then average the sentiment score out among how many sentences there are. Doing this leads to a more accurate overall sentiment score for a video. 
+
+#### Having a sentiment score for each video means that I could find the most positive video and the most negative video on a youtuber's channel (although the NLTK is not always the MOST accurate for sentiment analysis). Further, I could see if a YouTuber's sentiment across videos is correlated with video performance. It seems that slightly positive and slightly negative videos tend to get more views than neutral videos (although outliers could be affecting the average amount of views calculation).
+
+![newplot (2)](https://github.com/user-attachments/assets/02df67e1-bafe-4341-97a4-443ff537fbe4)
+
+### Most Common Words
+
+#### Originally going into this project, one metric I knew I wanted to measure was the most common words on a YouTube channel. To answer this question, I had to first concatenate every transcript of a every video that a YouTuber has into one giant string of every word spoken on the channel. With this large string, I could simply use a dictionary with words as keys and the # of times used being the values. However, to make the results more interesting, I wanted to get rid of very common words. I first used NLTK's stop_words function to prevent stop words from being placed in the dictionary. While this worked, there was still very common words in the dictionary. I then found a document of the 10,000 most common English words collected by Google (available here: https://github.com/first20hours/google-10000-english) and thought that using the file would be a good way to filter out common words. I arbitrarily used the first 500 most common words and filtered those words out from my dictionary. Lastly, I graphed the results into a bar graph using plotly.
+
+##### Some of the most commonly used words on the Vsauce channel (some words are not displayed on the axis due to the amount of bars, but in the dashboard, you can hover over the bar to reveal the word):
+
+![newplot (3)](https://github.com/user-attachments/assets/eed84e22-8f0c-4723-9eb7-b4ce7d4b1ca7)
 
 
 ## Running the Dashboard
