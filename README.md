@@ -1,5 +1,6 @@
 # Youtube Speech Analysis Dashboard
 A dashboard allowing you to analyze the speech patterns of your favorite YouTubers!
+Link to Dashboard Demo: https://youtu.be/Nc07gLHwt1Y
 
 #### Preview of Dashboard:
 
